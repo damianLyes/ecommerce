@@ -1,0 +1,49 @@
+body{
+    font-family: Montserrat;
+}
+
+.body{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.body form{
+    display:flex ;
+    flex-direction: column;
+    width:40%;
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
+h4{
+    text-align: center;
+    /* background-color: rgb(176, 174, 174); */
+    color: black;
+    padding: .8rem;
+}
+.logbtn{
+    margin-top: 1rem;
+    
+    border: none;
+    padding: .4rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border-radius: .5rem;
+}
+.p{
+    padding-top: .2rem;
+    font-weight: bolder;
+    font-size: large;
+}
+.la{
+    font-size: large;
+    padding-top: .2rem;
+}
+a{
+    text-decoration: none;
+}
+@media(max-width: 666px){
+    .body form{
+        width: 100%;
+    }   
+}
