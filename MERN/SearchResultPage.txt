@@ -1,0 +1,21 @@
+import axios from "axios";
+import { useEffect } from "react";
+
+export default function SearchResultPage(props){
+    const text = props.match.params.text;
+
+    const getResult = async() => {
+        // '?text=' is a query parameter.
+        const {data} = await axios.get(`http://localhost:5000/api/products?text=${text}`);
+    }
+
+    useEffect(() => {
+        getResult();
+    },[]);
+
+    return (
+        <>
+        <h1>This is the Search Result page</h1>
+        </>
+    );
+}
